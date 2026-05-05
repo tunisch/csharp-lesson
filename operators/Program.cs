@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp3
+﻿using System.Net.Http.Headers;
+
+namespace ConsoleApp3
 {
     internal class Program
     {
@@ -88,6 +90,37 @@
             sayi2--;
             Console.WriteLine(sayi2);
 
+            //"Commit yapmadan once her zaman Ctrl + K', D yaparak kodunuzu utule!."
+
+            Console.WriteLine("***** İkili Operatörler *****");
+
+            // (|, &, ^, <<, >>)
+            int sayi3 = 5;
+            int sayi4 = 3;
+
+            int sonuc3 = sayi3 | sayi4;
+            Console.WriteLine(sonuc3);
+
+            sonuc3 = sayi3 & sayi4;
+
+            Console.WriteLine(sonuc3);
+
+            sonuc3 = sayi3 ^ sayi4;
+            Console.WriteLine(sonuc3);
+
+            sonuc3 = sayi3 << 1;
+            Console.WriteLine(sonuc3);
+
+            sonuc3 = sayi3 >> 1;
+            Console.WriteLine(sonuc3);
+
+            Console.WriteLine("Bir tuşa basınız:");
+            Console.ReadKey(); //Readkey ile kullanıcıdan bir tuşa basmasını bekleriz. Bu sayede konsol ekranı hemen kapanmaz ve kullanıcı sonucu görebilir.
+
         }
     }
+
 }
+
+
+
