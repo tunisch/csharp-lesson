@@ -12,6 +12,7 @@
                 Console.WriteLine("Girdiğiniz sayı: " + sayi);
             }
             catch (Exception ex)
+            // Exception, tüm hataların temel sınıfıdır. Bu nedenle, herhangi bir türdeki hatayı yakalayabilir. Ancak, bu tür bir catch bloğu kullanırken dikkatli olunmalıdır, çünkü spesifik hataları yakalamak ve uygun şekilde ele almak genellikle daha iyidir.
             {
                 Console.WriteLine("Hata! " + ex.Message.ToString());
             }
@@ -28,6 +29,7 @@
 
             }
             catch (ArgumentNullException ex)
+            // ArgumentNullException, bir yönteme veya yapıcıya null bir argüman geçirildiğinde ortaya çıkan bir hata türüdür. Bu hata, genellikle bir parametrenin null olmasının beklenmediği durumlarda meydana gelir.
             {
 
                 Console.WriteLine("Boş değer giriniz: ");
@@ -47,7 +49,7 @@
                 Console.WriteLine(ex.Message);
             }
 
-            ------------------------------
+            Console.WriteLine(" **------------------------------** "); 
             try
             {
                 Console.Write("Bir sayı gir: ");
@@ -55,6 +57,7 @@
                 Console.WriteLine("Girdiğin sayı: " + sayi);
             }
             catch (FormatException ex)
+            // Format hatası, kullanıcıdan beklenen formatta bir veri alınamadığında ortaya çıkan bir hata türüdür. Örneğin, kullanıcıdan bir sayı girmesi beklenirken harf veya özel karakterler girdiğinde bu hata oluşur.
             {
                 Console.WriteLine("Hatalı giriş! Sayı girmen gerekiyordu.");
                 Console.WriteLine(ex.Message);
